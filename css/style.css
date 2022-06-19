@@ -1,0 +1,127 @@
+@import 'animate.css';
+
+body {
+    background-image: url(../media/images/fondo.webp);
+    margin: 0 auto;
+    padding: 0;
+}
+
+div img { 
+    width: 30%;
+    align-self: flex-start;
+}
+
+/* Navbar */
+
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  padding: 0.5rem;
+}
+
+#menu ul li {
+  list-style: none;
+  display: inline-block;
+
+}
+
+#menu ul li a{ 
+  text-decoration: none;
+  color: black;
+  background-color: #2a9d8f;
+  padding: 0.6rem;
+  border-radius: 1rem;
+  margin: 0px 5px 0px 5px;
+
+}
+
+#menu ul li:hover {
+  transform: scale(1.5);
+}
+
+#menu ul li a:hover{
+  color: white;
+}
+
+#logo a {
+  text-decoration: none;
+  color: #2a9d8f;
+  text-transform: uppercase;
+
+}
+
+#logo a:hover {
+  color: black;
+}
+
+/* Contenido central */
+#content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas: "carrousel"
+                       "texto"
+                       "boton";
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+#content p {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 20px;
+    color: #e9c46a;
+    text-align: center;
+    grid-area: texto;
+}
+
+#content img {
+  grid-area: carrousel;
+  margin-top: 3rem;
+}
+
+.sendButton {
+    background-color: #e76f51;
+    border-radius: 1.5rem;
+    color: black;
+    margin: 0 auto;
+    grid-area: boton;
+    padding: 1rem;
+    border: none;
+}
+
+.sendButton:hover {
+  color: white;
+}
+
+/* Footer */
+
+.footerContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 24rem;
+  background-color: white;
+  color: #2a9d8f;
+  padding: 0.7rem;
+}
+
+.facebookLogo {
+    width: 2%;
+}
+
+/* Media queries */
+
+@media screen and (max-width:768px) {
+  .headerContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #menu ul li:last-child {
+    margin-top: 1.7rem;
+  }
+}
