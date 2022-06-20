@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"
     <head>
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,34 +9,55 @@
         <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     </head>
     <body>
         <header>
-        <div class="headerContainer">
-            <div id="logo">
+        <div class="headerContainer container-fluid row">
+            <div id="logo" class="col col-lg-8 col-md-4 col-sm-2">
                 <a href="./index.html">Dbt</a>
             
             </div>
-            <nav id="menu">
+            <nav id="menu" class="col col-lg-4 col-md-8 col-sm-10">
                 <ul>
-                    <li><a href="./pages/sobremi.html">Sobre mi</a> </li>
-                    <li><a href="./pages/dbt.html">DBT</a></li>
-                    <li><a href="./pages/libros.html">Libros</a></li>
-                    <li><a href="./pages/tarifas.html">Tarifas</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                    <li class="row"><a href="./pages/sobremi.html">Sobre mi</a> </li>
+                    <li class="row"><a href="./pages/dbt.html">DBT</a></li>
+                    <li class="row"><a href="./pages/libros.html">Libros</a></li>
+                    <li class="row"><a href="./pages/tarifas.html">Tarifas</a></li>
+                    <li class="row"><a href="./pages/contacto.html">Contacto</a></li>
                 </ul>
             </nav>
           </div>
         </header>
-        <div id="content">
-            <!-- Acá va un carrousel -->
+        <div id="container-fluid col-12">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="./media/images/carrousel1.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <input type="button" value="Contáctame" class="sendButton animate__slideInRight"/>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./media/images/carrousel2.jpg" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./media/images/carrousel3.jpg" alt="Third slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./media/images/carrousel4.jpg" alt="Third slide">
+                  </div>
+                </div>
+              </div>
+            <!-- Acá va un carrousel 
             <img src="./media/images/carrousel1.jpg"/>
             <img src="./media/images/carrousel2.jpg"/>
             <img src="./media/images/carrousel3.jpg"/>
-            <img src="./media/images/carrousel4.jpg"/>
+            <img src="./media/images/carrousel4.jpg"/>-->
 
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-            <input type="button" value="Contáctame" class="sendButton animate__slideInRight"/>
+           
         </div>
         <footer>
           <div class="footerContainer">
@@ -44,5 +65,7 @@
             <img src="./media/images/facebook.png" class="facebookLogo"/>
           </div>
         </footer>
+        <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </body>
 </html>
